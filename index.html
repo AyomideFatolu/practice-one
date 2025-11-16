@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------- icon scout cdn ----------------------------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <!--------------------------------- custom css --------------------------------------->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Modern e-commerce dashboard design</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <a href="./index.html" class="sidebar__logo">
+            <img src="./img/logo.png" alt="e-commerce logo">
+            <h3>SH<span>O</span>P</h3>
+        </a>
+        <menu class="sidebar__top">
+            <a href="" class="active">
+                <i class="uil uil-create-dashboard"></i>
+                <h3>Dashboard</h3>
+            </a>
+
+            <a href="">
+                <i class="uil uil-th-large"></i>
+                <h3>Orders</h3>
+            </a>
+
+            <a href="">
+                <i class="uil uil-tag-alt"></i>
+                <h3>Products</h3>
+            </a>
+
+            <a href="">
+                <i class="uil uil-chart-pie"></i>
+                <h3>Analytics</h3>
+            </a>
+
+            <a href="">
+                <i class="uil uil-users-alt"></i>
+                <h3>Customers</h3>
+            </a>
+
+             <a href="">
+                <i class="uil uil-envelopes"></i>
+                <h3>Messages</h3>
+            </a>   
+        </menu>
+
+        <menu class="sidebar__bottom">
+            <a href="">
+                <i class="uil uil-question-circle"></i>
+                <h3>Support</h3>
+            </a>
+
+            <a href="">
+                <i class="uil uil-question-circle"></i>
+                <h3>Settings</h3>
+            </a>
+
+            <a href="">
+                <i class="uil uil-signout"></i>
+                <h3>Logout</h3>
+            </a>
+
+        </menu> 
+    </aside>
+
+    <button class="sidebar__toggle-open"><i class="uil uil-bars"></i></button>
+    <button class="sidebar__toggle-close"><i class="uil uil-multiply"></i></button>
+
+    <main>
+        <nav class="navbar">
+            <div class="navbar__search">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search...">
+                <i class="uil uil-microphone"></i>
+            </div>
+            <menu class="navbar__items">
+                <button class="navbar__theme-btn">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <button class="navbar__export-btn">
+                    Export <i class="uil uil-export"></i>
+                </button>
+                <div class="navbar__items-image">
+                    <img src="./img/beautiful-home-fireplace-flowers-home-decor-15727063.webp" alt="">
+                </div>
+            </menu>
+        </nav>
+
+
+
+        <section class="main__wrapper">
+            <section class="main__left">
+                <h1>Overview</h1>
+                <menu class="cards">
+                    <article class="card">
+                        <h5>Products viewed <span class="success">+5.0%</span></h5>
+                        <h2>101.35K</h2>
+                        <div>
+                            <small>Vs. last month</small>
+                            <small>77.2%</small>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h5>Add to cart <span class="success">+10.0%</span></h5>
+                        <h2>206.35K</h2>
+                        <div>
+                            <small>Vs. last month</small>
+                            <small>407.2%</small>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h5>Checkout <span class="danger">-6.0%</span></h5>
+                        <h2>146.35K</h2>
+                        <div>
+                            <small>Vs. last month</small>
+                            <small>0.2%</small>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h5>Shared <span class="success">+1.0%</span></h5>
+                        <h2>406.35K</h2>
+                        <div>
+                            <small>Vs. last month</small>
+                            <small>477.2%</small>
+            
+                        </div>
+                    </article>
+                </menu>
+
+                <canvas id="chart">
+
+                </canvas>
+
+                <section class="topProducts">
+                    <h3>Top selling Products</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Stock</th>
+                                <th>Price</th>
+                                <th>Sales</th>
+                                <th>Earnings</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="./img/P3-NOV-iStock-2167996762.jpg" alt="">
+                                    </div>
+                                    <p>winter jacket for females</p>
+                                </td>
+                                <td>34,888</td>
+                                <td>$44.88</td>
+                                <td>1000</td>
+                                <td>800,000</td>
+                                <td>11.67%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="./img/P3-NOV-iStock-2167996762.jpg" alt="">
+                                    </div>
+                                    <p>winter jacket for females</p>
+                                </td>
+                                <td>34,888</td>
+                                <td>$44.88</td>
+                                <td>1000</td>
+                                <td>800,000</td>
+                                <td>11.67%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="./img/P3-NOV-iStock-2167996762.jpg" alt="">
+                                    </div>
+                                    <p>winter jacket for females</p>
+                                </td>
+                                <td>34,888</td>
+                                <td>$44.88</td>
+                                <td>1000</td>
+                                <td>800,000</td>
+                                <td>11.67%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="./img/P3-NOV-iStock-2167996762.jpg" alt="">
+                                    </div>
+                                    <p>winter jacket for females</p>
+                                </td>
+                                <td>34,888</td>
+                                <td>$44.88</td>
+                                <td>1000</td>
+                                <td>800,000</td>
+                                <td>11.67%</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img src="./img/P3-NOV-iStock-2167996762.jpg" alt="">
+                                    </div>
+                                    <p>winter jacket for females</p>
+                                </td>
+                                <td>34,888</td>
+                                <td>$44.88</td>
+                                <td>1000</td>
+                                <td>800,000</td>
+                                <td>11.67%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <small>see more...</small>
+                </section>
+            </section>
+
+
+            <section class="main__right">
+                <article class="topCategories">
+                    <header>
+                        <h4>Top Categories</h4>
+                        <i class="uil uil-ellipsis-h"></i>
+                    </header>
+
+                    <canvas id="categories"></canvas>
+                    
+                    <ul>
+                        <li>
+                            <div>
+                                <span></span>
+                                <h5>Fashion</h5>
+                            </div>
+                            <h6> 80.4% </h6>
+                        </li>
+
+                        <li>
+                            <div>
+                                <span></span>
+                                <h5>Food</h5>
+                            </div>
+                            <h6> 73.0% </h6>
+                        </li>
+
+                        <li>
+                            <div>
+                                <span></span>
+                                <h5>Electronics</h5>
+                            </div>
+                            <h6> 55.4% </h6>
+                        </li>
+
+                        <li>
+                            <div>
+                                <span></span>
+                                <h5>Others</h5>
+                            </div>
+                            <h6> 47.4% </h6>
+                        </li>
+
+                    </ul>
+                    <button>View details <i class="uil uil-external-link-alt"></i></button>
+                </article>
+
+                <article class="nextEvents">
+                    <header>
+                        <h4>Upcoming Events</h4>
+                        <i class="uil uil-ellipsis-h"></i>
+                    </header>
+
+                    <div class="nextEvents__image">
+                        <img src="./img/beautiful-home-fireplace-flowers-home-decor-15727063.webp" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="event__image">
+                                <img src="./img/SAM-NOV-PHOTO-1120x740-1420571244.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Christmas holiday sales</h5>
+                                <small>20 - 25 December, 2025</small>
+                            </div>
+                        </li>
+
+                         <li>
+                            <div class="event__image">
+                                <img src="./img/P4-NOV-iStock-2165931620.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>End of the year sales</h5>
+                                <small>20 - 25 December, 2025</small>
+                            </div>
+                        </li>
+
+                         <li>
+                            <div class="event__image">
+                                <img src="./img/P3-NOV-iStock-2167996762.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>New year sales</h5>
+                                <small>1 - 5 January, 2026</small>
+                            </div>
+                        </li>
+                    </ul>
+                    <button>View events calendar <i class="uil uil-external-link-alt"></i></button>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
